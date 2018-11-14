@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <listeners>
+    <listener class-name="utills.TestNgListener"/>
+  </listeners>
+  <test thread-count="5" name="Amazon UI Functional Testing (failed)">
+    <classes>
+      <class name="testScripts.AM_Login_002">
+        <methods>
+          <include name="closeBroswer"/>
+          <include name="AM_Login_001"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testScripts.AM_Login_002 -->
+    </classes>
+  </test> <!-- Amazon UI Functional Testing (failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
