@@ -1,3 +1,5 @@
+/Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/utills/ExtentManager.java
+/Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/utills/Log.java
 /Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/testScripts/AM_Login_002.java
 /Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/pages/ProductPage.java
 /Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/utills/TestNgListener.java
@@ -5,4 +7,5 @@
 /Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/testScripts/BaseDev.java
 /Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/pages/ElectronicPage.java
 /Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/pages/HomePage.java
+/Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/utills/ExtentTestManager.java
 /Users/aravindanathdm/GitFramework/SimpleFramework/src/main/java/pages/LoginPage.java

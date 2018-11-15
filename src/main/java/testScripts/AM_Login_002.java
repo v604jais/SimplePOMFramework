@@ -11,7 +11,7 @@ import pages.ProductPage;
 public class AM_Login_002 extends BaseDev {
 
 	@Test
-	public void AM_Login_001() throws InterruptedException, IOException {
+	public void AM_Login_002() throws InterruptedException, IOException {
 
 		LoginPage lp = new LoginPage(driver);
 		lp.login("automationclass2018@gmail.com", "auto2018");
