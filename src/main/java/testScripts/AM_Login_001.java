@@ -10,12 +10,13 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.ProductPage;
 
-public class AM_Login_001 extends BaseDev {
+public class AM_Login_001 extends BaseTest {
 
 	@Test
 	public void AM_Login_001() throws InterruptedException, IOException {
 		//test.log(LogStatus.PASS, "AM_Login_001");
 		LoginPage lp = new LoginPage(driver);
+		
 		lp.login("automationclass2018@gmail.com", "auto2018");
 
 		HomePage hp = new HomePage(driver);

@@ -8,7 +8,7 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.ProductPage;
 
-public class AM_Login_002 extends BaseDev {
+public class AM_Login_002 extends BaseTest {
 
 	@Test
 	public void AM_Login_002() throws InterruptedException, IOException {

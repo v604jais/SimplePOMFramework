@@ -17,6 +17,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+import utills.JavaUtils;
+
 public class ElectronicPage   {
 	private WebDriver driver;
 	public ElectronicPage(WebDriver driver) {
@@ -43,4 +45,9 @@ public class ElectronicPage   {
 	 * @author aravindanathdm
 	 */
 	
-}
+	protected HashMap<String, String> ep;
+	
+	public void login(String loginVal) throws InterruptedException {
+		ep = JavaUtils.readExcelData("LOGIN", loginVal);
+	
+}}

@@ -1,13 +1,5 @@
 package utills;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
@@ -18,12 +10,14 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import testScripts.BaseDev;
+import pages.BasePage;
+import testScripts.BaseTest;
 
 public class TestNgListener implements ITestListener {
-	private WebDriver driver;
+//	private WebDriver driver;
 	protected static ExtentReports reports;
 	protected static ExtentTest test;
+	protected BasePage bp;
 
 	public void onTestStart(ITestResult result) {
 		Reporter.log("on test start");
@@ -42,13 +36,13 @@ public class TestNgListener implements ITestListener {
 		 
 		  
 				try {
-					BaseDev.takeSnapShot( );
+					  bp.takeSnapShot( );
 			 
 				 
 				} catch (Exception e) {
  
 				}
- 
+			
 			String file = test
 					.addScreenCapture(System.getProperty("user.dir")+"/Output/screenShot.png");
 			test.log(LogStatus.FAIL, result.getMethod().getMethodName() + "test is failed", file);
